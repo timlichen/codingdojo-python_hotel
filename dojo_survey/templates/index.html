@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <h1>Dojo Survey</h1>
+    {{thing}} - template, put things here
+    {% conditions, forloop, |, %} -> evaluate my code
+    <form action="/process_form" method="post">
+        <p>Your name: <input type="text" name="name"></p>
+        <p>Dojo Location: <select name="dojo_location">
+            <option value="Seattle">Seattle</option>
+            <option value="Online">Online</option>
+        </select></p>
+        <p>Favorite Language: <select name="favorite_language">
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+        </select></p>
+        <p>Comment: <textarea name="comment" cols="30" rows="10"></textarea></p>
+        <input type="submit" value="Button">
+    </form>
+</body>
+</html>
